@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero Section */}
        <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <Image
-            src="/assets/logo.png" // Replace with your logo path
+            src="/assets/Logo.png" // Replace with your logo path
             alt="Kimova Logo"
             width={400}
             height={400}
