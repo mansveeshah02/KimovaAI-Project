@@ -1,7 +1,6 @@
-// components/StatsSection.tsx
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 
 interface StatProps {
   label: string;
@@ -13,29 +12,7 @@ const Stat: React.FC<StatProps> = ({ label, target }) => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const statRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          animateCount();
-          setHasAnimated(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (statRef.current) {
-      observer.observe(statRef.current);
-    }
-
-    return () => {
-      if (statRef.current) {
-        observer.unobserve(statRef.current);
-      }
-    };
-  }, []);
-
-  const animateCount = () => {
+  const animateCount = useCallback(() => {
     let start = 0;
     const duration = 2000;
     const intervalTime = 20;
@@ -49,7 +26,30 @@ const Stat: React.FC<StatProps> = ({ label, target }) => {
       }
       setCount(Math.floor(start));
     }, intervalTime);
-  };
+  }, [target]);
+
+  useEffect(() => {
+    const currentRef = statRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          animateCount();
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [animateCount, hasAnimated]);
 
   return (
     <div

@@ -15,7 +15,7 @@ const PricingCard: React.FC = () => {
       </h2>
       <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
         TurboAudit pricing is customized based on your specific use case, company size, and complexity.
-        Contact us for a personalized quote whether you're implementing, auditing, or both.
+        Contact us for a personalized quote whether you are implementing, auditing, or both.
       </p>
       <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
         Contact Us for Pricing

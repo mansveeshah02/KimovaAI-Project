@@ -52,7 +52,7 @@ const Auditing: FC = () => {
   return (
     <section className="py-14 px-4 sm:px-6 lg:px-10 bg-gradient-to-r from-[#ecf0f1] to-[#ffffff]">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-12 text-gray-800 leading-snug">
+        <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold mb-12 text-gray-800 leading-snug">
           Unlock Intelligent ISMS Compliance & Auditing
         </h2>
 

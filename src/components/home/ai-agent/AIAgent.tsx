@@ -7,10 +7,10 @@ const AIHelpSection: FC = () => {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-2">
-          Integrated AI Agents: Ask ISMS & Ask AIMS
+          Integrated AI Agents: Ask ISMS &amp; Ask AIMS
         </h2>
         <p className="italic text-sm text-gray-500 mb-10">
-          Instant Expertise within the Auditor's Workflow
+          Instant Expertise within the Auditor&apos;s Workflow
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
