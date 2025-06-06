@@ -40,7 +40,7 @@ export default function HomePage() {
       </section>
 
       {/* Our Vision Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-white md:mt-20 -mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-blue-700">Our Vision</h2>
           <p className="text-gray-700 mb-6 text-lg leading-relaxed">

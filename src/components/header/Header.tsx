@@ -114,20 +114,21 @@ export default function Header() {
             <summary className="cursor-pointer text-white font-medium text-lg flex justify-between items-center hover:text-yellow-300">
               Services ▾
             </summary>
-            <div className="pl-4 mt-2 flex flex-col space-y-1">
-              <Link
-                href="/web-development"
-                onClick={() => setMenuOpen(false)}
-                className="text-white hover:text-yellow-300"
-              >
-                Web Dev
+            <div className="pl-4 mt-2 flex flex-col space-y-1 group-hover:block">
+             <Link href="/web-development" className="block px-4 py-2 hover:bg-gray-100">
+                AI Policy Analyzer
               </Link>
-              <Link
-                href="/app-development"
-                onClick={() => setMenuOpen(false)}
-                className="text-white hover:text-yellow-300"
-              >
-                App Dev
+              <Link href="/app-development" className="block px-4 py-2 hover:bg-gray-100">
+                AI ISMS Audit
+              </Link>
+              <Link href="/app-development" className="block px-4 py-2 hover:bg-gray-100">
+                AI Audit Notes
+              </Link>
+              <Link href="/app-development" className="block px-4 py-2 hover:bg-gray-100">
+                Ask ISMS
+              </Link>
+              <Link href="/app-development" className="block px-4 py-2 hover:bg-gray-100">
+                Ask AIMS
               </Link>
             </div>
           </details>
@@ -139,25 +140,27 @@ export default function Header() {
           >
             Contact Us
           </Link>
+           <Link
+            href="/about-us"
+            onClick={() => setMenuOpen(false)}
+            className="block text-white font-medium text-lg hover:text-yellow-300"
+          >
+           About Us
+          </Link>
 
           <details className="group">
             <summary className="cursor-pointer text-white font-medium text-lg flex justify-between items-center hover:text-yellow-300">
               More ▾
             </summary>
-            <div className="pl-4 mt-2 flex flex-col space-y-1">
-              <Link
-                href="/about"
-                onClick={() => setMenuOpen(false)}
-                className="text-white hover:text-yellow-300"
-              >
-                About
-              </Link>
-              <Link
-                href="/blog"
-                onClick={() => setMenuOpen(false)}
-                className="text-white hover:text-yellow-300"
-              >
+            <div className="pl-4 mt-2 flex flex-col space-y-1 group-hover:block">
+                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100">
                 Blog
+              </Link>
+              <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100">
+                Team
+              </Link>
+              <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100">
+                Privacy Policy
               </Link>
             </div>
           </details>

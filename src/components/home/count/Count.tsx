@@ -54,7 +54,7 @@ const Stat: React.FC<StatProps> = ({ label, target }) => {
   return (
     <div
       ref={statRef}
-      className="bg-[#1e1e1e] shadow-lg rounded-2xl p-10 w-full text-center md:-mb-20"
+      className="bg-[#1e1e1e] shadow-lg rounded-2xl p-10 w-full text-center md:-mb-20 -mb-20"
     >
       <div className="text-5xl font-extrabold bg-gradient-to-r from-[#3498db] to-[#dea549] text-transparent bg-clip-text">
         {count}+
