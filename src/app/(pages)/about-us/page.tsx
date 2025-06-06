@@ -33,7 +33,7 @@ export default function HomePage() {
           </h2>
           <p className="max-w-3xl mx-auto text-gray-800 text-lg leading-relaxed">
             At Kimova AI, we pride ourselves on innovation and excellence. As a leading provider of cutting-edge
-            solutions in the realm of cybersecurity and compliance, we're excited to introduce{' '}
+            solutions in the realm of cybersecurity and compliance, we are excited to introduce
             <strong className="text-blue-700">TurboAudit</strong>, the first ever AI auditing tool brought to you by Kimova AI.
           </p>
         </div>
