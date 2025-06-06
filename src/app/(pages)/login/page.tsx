@@ -92,7 +92,7 @@ export default function LoginPage() {
             </form>
 
             <div className="flex justify-between text-xs text-gray-600 mt-4">
-              <a href="#" className="hover:underline">Don't have an account? Sign Up</a>
+              <a href="#" className="hover:underline">Don&apos;t have an account? Sign Up</a>
               <a href="#" className="hover:underline">Forgot Password?</a>
             </div>
 
