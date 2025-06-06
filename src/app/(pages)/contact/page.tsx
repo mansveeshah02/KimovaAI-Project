@@ -17,7 +17,7 @@ const Contact = () => {
 
   return (
     <main
-      className="min-h-screen flex items-center justify-center px-4 py-16"
+      className="min-h-screen flex items-center justify-center px-4 py-16 mt-14"
       style={{
         background: "linear-gradient(135deg, #3498db 0%, #f39c12 100%)",
       }}

@@ -14,42 +14,39 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-50 px-6 py-12">
-      <div className="flex w-full max-w-5xl rounded-2xl shadow-lg overflow-hidden flex-col md:flex-row">
+    <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-8 sm:px-6 sm:py-12">
+      <div className="flex w-full max-w-6xl rounded-2xl shadow-lg overflow-hidden flex-col md:flex-row bg-white">
 
-        {/* Left Panel with Gradient Background */}
-        <div className="w-full md:w-1/2 p-12 
-          bg-gradient-to-br from-[#3498db]/20 to-[#f39c12]/20 
-          text-gray-900"
-        >
-          <h1 className="text-3xl font-semibold mb-8 text-[#3498db]">
+        {/* Left Panel */}
+        <div className="w-full md:w-1/2 p-8 sm:p-10 md:p-12 bg-gradient-to-br from-[#3498db]/20 to-[#f39c12]/20 text-gray-900 mt-20">
+          <h1 className="text-2xl sm:text-3xl font-semibold mb-6 text-[#3498db]">
             Welcome to <span className="font-bold text-[#f39c12]">TurboAudit</span>
           </h1>
 
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {[
               {
-                icon: <FaCloudUploadAlt className="text-[#3498db] text-2xl" />,
+                icon: <FaCloudUploadAlt className="text-[#3498db] text-xl sm:text-2xl" />,
                 title: 'Upload documents',
                 desc: 'Say goodbye to paperwork. Just upload your current info security policies and procedures.',
               },
               {
-                icon: <FaCogs className="text-[#3498db] text-2xl" />,
+                icon: <FaCogs className="text-[#3498db] text-xl sm:text-2xl" />,
                 title: 'Process documents',
                 desc: 'TurboAudit AI maps your documents to ISO/IEC 27001:2022 for fast compliance.',
               },
               {
-                icon: <FaDownload className="text-[#3498db] text-2xl" />,
+                icon: <FaDownload className="text-[#3498db] text-xl sm:text-2xl" />,
                 title: 'Download report',
                 desc: 'Get a clear compliance roadmap with your tailored gap assessment report.',
               },
             ].map((item, index) => (
               <div key={index} className="flex gap-4 items-start">
-                <div className="p-3 bg-[#f39c12]/30 rounded-md">
+                <div className="p-2 sm:p-3 bg-[#f39c12]/30 rounded-md">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg text-black">{item.title}</h3>
+                  <h3 className="font-semibold text-base sm:text-lg text-black">{item.title}</h3>
                   <p className="text-sm text-gray-700">{item.desc}</p>
                 </div>
               </div>
@@ -58,9 +55,9 @@ export default function LoginPage() {
         </div>
 
         {/* Right Panel */}
-        <div className="w-full md:w-1/2 p-12 bg-white flex items-center justify-center">
+        <div className="w-full md:w-1/2 p-8 sm:p-10 md:p-12 bg-white flex items-center justify-center">
           <div className="w-full max-w-sm">
-            <h2 className="text-xl font-semibold text-center mb-6 text-[#3498db]">
+            <h2 className="text-lg sm:text-xl font-semibold text-center mb-4 sm:mb-6 text-[#3498db]">
               Login to <span className="font-bold text-[#f39c12]">TurboAudit</span>
             </h2>
 
@@ -91,7 +88,7 @@ export default function LoginPage() {
               </button>
             </form>
 
-            <div className="flex justify-between text-xs text-gray-600 mt-4">
+            <div className="flex flex-col sm:flex-row justify-between text-xs text-gray-600 mt-4 gap-2 sm:gap-0 text-center sm:text-left">
               <a href="#" className="hover:underline">Don&apos;t have an account? Sign Up</a>
               <a href="#" className="hover:underline">Forgot Password?</a>
             </div>
