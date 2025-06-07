@@ -10,14 +10,12 @@ export default function Header() {
   return (
     <header className="bg-gradient-to-r from-[#3498db] to-[#f39c12] shadow-md p-4 fixed w-full z-50 top-0 left-0">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
             <Image src="/assets/Logo.png" alt="My Logo" width={60} height={60} priority />
           </Link>
         </div>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center space-x-6 text-white text-sm md:text-base font-medium">
           <Link href="/" className="hover:text-yellow-300 transition duration-300">
             Home
@@ -70,7 +68,6 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Search bar */}
           <div className="relative flex items-center border rounded-lg border-white">
             <FaSearch className="absolute left-3 text-white text-sm" />
             <input
@@ -80,7 +77,6 @@ export default function Header() {
             />
           </div>
 
-          {/* Login button */}
           <Link
             href="/login"
             className="bg-white text-blue-600 px-4 py-2 rounded-lg font-bold shadow-md hover:bg-blue-100 transition duration-300 cursor-pointer"
@@ -89,7 +85,6 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Mobile menu button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-white text-2xl focus:outline-none"
@@ -99,7 +94,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-gradient-to-r from-[#3498db] to-[#f39c12] p-4 space-y-4 absolute top-full left-0 w-full z-40 shadow-lg">
           <Link
@@ -175,7 +169,6 @@ export default function Header() {
             />
           </div>
 
-          {/* Mobile login button */}
           <Link
             href="/login"
             onClick={() => setMenuOpen(false)}

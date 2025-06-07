@@ -6,13 +6,11 @@ const ComplianceStack: FC = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-gray-100 via-gray-50 to-white relative overflow-hidden -mb-14">
       <div className="max-w-6xl mx-auto text-center relative z-10">
-        {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-900 mb-6 tracking-wide leading-tight">
           How <span className="text-blue-600 font-semibold">TurboAudit</span>{" "}
           Complements Your Compliance Stack
         </h2>
 
-        {/* Wave SVG */}
         <svg
           className="mx-auto mb-12 sm:mb-14"
           width="120"
@@ -30,14 +28,11 @@ const ComplianceStack: FC = () => {
           />
         </svg>
 
-        {/* Cards Container */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center justify-center">
-          {/* TurboAudit Card */}
           <div
             tabIndex={0}
             className="relative bg-gradient-to-br from-white to-blue-50 rounded-3xl shadow-[10px_10px_30px_rgba(59,130,246,0.2),-10px_-10px_30px_rgba(147,197,253,0.7)] p-6 sm:p-8 w-full max-w-md cursor-pointer transform transition-transform duration-500 ease-in-out hover:scale-105 hover:rotate-1 focus:scale-105 focus:rotate-1"
           >
-            {/* Icon */}
             <div className="absolute -top-8 left-6 sm:left-10 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-blue-400 via-blue-500 to-blue-600 shadow-lg flex items-center justify-center animate-pulse hover:animate-none">
               <div className="bg-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-blue-600 drop-shadow-lg">
                 <SearchCheck size={28} />
@@ -89,7 +84,6 @@ const ComplianceStack: FC = () => {
             </a>
           </div>
 
-          {/* GRC Platforms Card */}
           <div
             tabIndex={0}
             className="relative bg-gradient-to-br from-white to-yellow-50 rounded-3xl shadow-[10px_10px_30px_rgba(202,138,4,0.15),-10px_-10px_30px_rgba(254,234,157,0.7)] p-6 sm:p-8 w-full max-w-md cursor-pointer transform transition-transform duration-500 ease-in-out hover:scale-105 hover:-rotate-1 focus:scale-105 focus:-rotate-1"

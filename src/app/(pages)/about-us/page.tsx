@@ -5,10 +5,9 @@ import Image from 'next/image';
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      {/* Hero Section */}
        <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
           <Image
-            src="/assets/Logo.png" // Replace with your logo path
+            src="/assets/Logo.png" 
             alt="Kimova Logo"
             width={400}
             height={400}
@@ -17,7 +16,6 @@ export default function HomePage() {
           />
         </div>
       <section className="relative w-full py-20 px-6 text-center ">
-        {/* Logo as background with low opacity */}
        
 
         <div className="relative max-w-4xl mx-auto z-10">
@@ -39,7 +37,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Vision Section */}
       <section className="py-20 px-6 bg-white md:mt-20 -mt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-blue-700">Our Vision</h2>

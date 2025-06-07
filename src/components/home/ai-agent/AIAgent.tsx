@@ -14,7 +14,6 @@ const AIHelpSection: FC = () => {
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {/* Ask ISMS */}
           <div className="border rounded-xl shadow-sm p-6 flex gap-4 items-start hover:shadow-md transition">
             <div className="bg-indigo-100 text-indigo-600 p-3 rounded-full">
               <FileText size={24} />
@@ -32,7 +31,6 @@ const AIHelpSection: FC = () => {
             </div>
           </div>
 
-          {/* Ask AIMS */}
           <div className="border rounded-xl shadow-sm p-6 flex gap-4 items-start hover:shadow-md transition">
             <div className="bg-orange-100 text-orange-600 p-3 rounded-full">
               <Brain size={24} />

@@ -17,7 +17,6 @@ export default function LoginPage() {
     <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-8 sm:px-6 sm:py-12">
       <div className="flex w-full max-w-6xl rounded-2xl shadow-lg overflow-hidden flex-col md:flex-row bg-white">
 
-        {/* Left Panel */}
         <div className="w-full md:w-1/2 p-8 sm:p-10 md:p-12 bg-gradient-to-br from-[#3498db]/20 to-[#f39c12]/20 text-gray-900 mt-20">
           <h1 className="text-2xl sm:text-3xl font-semibold mb-6 text-[#3498db]">
             Welcome to <span className="font-bold text-[#f39c12]">TurboAudit</span>
@@ -54,7 +53,6 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Right Panel */}
         <div className="w-full md:w-1/2 p-8 sm:p-10 md:p-12 bg-white flex items-center justify-center">
           <div className="w-full max-w-sm">
             <h2 className="text-lg sm:text-xl font-semibold text-center mb-4 sm:mb-6 text-[#3498db]">

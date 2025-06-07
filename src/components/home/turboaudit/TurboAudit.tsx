@@ -49,22 +49,18 @@ const TurboAuditWorkflow: FC = () => {
               key={idx}
               className="relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.03]"
             >
-              {/* Step Number Badge */}
               <div className="absolute -top-5 left-6 sm:left-8 w-12 h-12 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
                 {step.number}
               </div>
 
-              {/* Title */}
               <h3 className="text-lg sm:text-xl font-semibold text-orange-600 mb-3 mt-3 sm:mt-0">
                 {step.title}
               </h3>
 
-              {/* Description */}
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
                 {step.description}
               </p>
 
-              {/* Learn More */}
               <a
                 href="#"
                 className="inline-flex items-center text-orange-500 font-medium text-sm sm:text-base hover:underline"
@@ -72,7 +68,6 @@ const TurboAuditWorkflow: FC = () => {
                 Learn More →
               </a>
 
-              {/* Arrow connector (only visible on desktop) */}
               {idx < steps.length - 1 && (
                 <div
                   className={`hidden sm:block absolute top-1/2 right-0 h-px bg-gradient-to-r from-orange-400 to-yellow-500

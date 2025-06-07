@@ -62,22 +62,18 @@ const Auditing: FC = () => {
               key={index}
               className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-md transition-all duration-300 hover:shadow-lg"
             >
-              {/* Step Number Badge */}
               <div className="absolute -top-4 left-4 sm:left-6 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center text-xs sm:text-sm font-semibold shadow">
                 {index + 1 < 10 ? `0${index + 1}` : index + 1}
               </div>
 
-              {/* Icon */}
               <div className="mb-4 sm:mb-6 w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-lg sm:text-xl mx-auto">
                 {feature.icon}
               </div>
 
-              {/* Title */}
               <h3 className="text-base sm:text-lg font-semibold text-center text-gray-800 mb-2">
                 {feature.title}
               </h3>
 
-              {/* Description */}
               <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
                 {feature.description}
               </p>

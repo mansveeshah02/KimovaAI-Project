@@ -11,7 +11,6 @@ const Footer: FC = () => {
   return (
     <footer className="bg-gray-100 text-gray-700 py-10 mt-20">
       <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
-        {/* Logo or name */}
         <div className="mb-4 sm:mb-0 text-center sm:text-left">
           <h2 className="font-semibold text-lg text-gray-800">
             TurboAudit
@@ -21,7 +20,6 @@ const Footer: FC = () => {
           </p>
         </div>
 
-        {/* Social links */}
         <div className="flex space-x-4 mb-4 sm:mb-0">
           <a
             href="https://www.linkedin.com"
@@ -55,7 +53,6 @@ const Footer: FC = () => {
           </a>
         </div>
 
-        {/* Copyright */}
         <div className="text-sm text-gray-400 text-center sm:text-right">
           © {new Date().getFullYear()} TurboAudit. All rights reserved.
         </div>
